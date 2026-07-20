@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Avondale · Lodge &amp; Spa</title>
+<link rel="preconnect" href="" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<template id="__bundler_thumbnail" data-bg-color="#1d3327">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#1d3327"/>
+    <text x="600" y="470" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="320" letter-spacing="8" fill="#ece9e5">A</text>
+    <text x="600" y="560" text-anchor="middle" font-family="Georgia, serif" font-size="40" letter-spacing="14" fill="#ece9e5">AVONDALE</text>
+  </svg>
+</template>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Avondale home">
+    <svg class="nav__wordmark" viewBox="0 0 566.24 82.77" fill="currentColor" role="img" aria-label="Avondale">
+      <path d="M448.86,76.97c-.47-1-.94-2-1.34-3.04-9.25-23.5-18.49-46.98-27.68-70.5-.27-.69-.82-1.55-1.72-1.55-1.08,0-1.39,1.08-1.47,1.29-7.56,19.39-15.11,38.78-22.67,58.17-1.8,4.63-3.61,9.26-5.46,13.87-.98,2.46-2.71,4.48-5.43,4.83-.02,0-.94,1.18-.93,1.15h11.98s-.94-1.2-.95-1.2c-1.93.05-3.02-1.11-2.51-3.37.25-1.11.6-2.23,1.02-3.3,3.75-9.73,7.55-19.44,11.28-29.17.35-.91.82-1.17,1.78-1.17,7.84.03,15.67.04,23.51,0,.98,0,1.4.29,1.75,1.19,2.71,7.08,5.51,14.14,8.22,21.22,1.38,3.6,2.77,7.21,3.93,10.88.75,2.4-.02,3.24-2.57,3.75-.04,0-.7,1.16-.71,1.17h15.63s-.51-1.17-.52-1.16c-2.34,0-4.11-.93-5.12-3.06ZM404.27,40.7c2.68-6.88,5.35-13.73,8.05-20.66,1.48-3.8,6.85-3.8,8.33,0,2.7,6.92,5.36,13.77,8.05,20.67h-24.42Z"></path>
+      <path d="M207.87,7.35c-11.91-7.73-24.94-9.06-38.47-5.4-11.16,3.01-19.7,9.61-25,20.01-4.16,8.17-5.23,16.9-3.93,25.9,1.93,13.35,8.73,23.42,20.7,29.79,8.68,4.61,18.01,5.89,27.68,4.72,9.34-1.13,17.66-4.65,24.48-11.26,8.38-8.12,11.91-18.26,12.06-30.45-.08-1.12-.13-2.94-.34-4.73-1.44-12.1-6.89-21.9-17.18-28.58ZM213.57,63.2c-6.29,10.42-15.62,16.15-27.73,17.12-11.75.94-21.9-2.65-29.93-11.45-5.38-5.9-8.26-13.02-9.29-20.88-1.42-10.83.06-21.36,6.85-30.93,6.06-8.54,15.81-13.72,26.25-14.56,10.82-.87,20.41,2.25,28.27,9.92,6.37,6.21,9.71,13.96,10.79,22.73.26,2.06.32,4.15.47,6.22-.11,7.75-1.66,15.14-5.69,21.82Z"></path>
+      <path d="M358.79,7.3c-6.27-3.6-13.13-5.14-20.29-5.26-7.84-.13-15.67-.04-23.51-.04-.34,0-.69.07-1.04.1v2.04c.53.06,1.02.12,1.5.18,2.28.28,4.01,2.2,4.08,4.5,0,.31.01.63.01.94,0,21.2,0,42.4,0,63.6,0,.81-.04,1.63-.19,2.43-.33,1.78-1.18,2.58-2.95,2.88-.79.13-1.6.21-2.42.31v2.13c1.26,0,2.43,0,3.6,0,8.6-.08,17.24.27,25.8-.35,11.66-.84,20.83-6.48,26.83-16.62,6.37-10.76,7.6-22.43,4.9-34.49-2.18-9.75-7.58-17.33-16.32-22.35ZM367.4,57.79c-4.17,11.68-12.84,18.14-24.88,20.34-2.78.51-7.05.68-10.64.71-3.65.04-6.62-2.92-6.62-6.57V4.26c3.43,0,6.78-.08,10.12.02,5.47.15,10.81,1.01,15.88,3.18,8.28,3.55,13.83,9.69,16.57,18.19,3.45,10.71,3.36,21.53-.43,32.14Z"></path>
+      <path d="M288.73,3.15c3.45.3,4.33,1.23,4.49,4.65.01.27.02.54.02.82,0,14.67-.03,39.1-.06,52.83,0,3.11-4.03,4.34-5.78,1.77-5.73-8.41-14.41-21.23-19.58-29.32-6.56-10.26-13.12-20.52-19.71-30.77-.29-.45-.78-1.07-1.2-1.08-3.21-.09-6.42-.05-9.59-.05-.38.97.07,1.08.78,1.15,3.82.36,4.68,1.32,4.71,5.14,0,.14,0,.27,0,.41,0,21.89,0,43.77,0,65.66,0,3.77-.7,5.47-4.83,5.58-.87.02-.95.43-.71,1.09h13.34l.19-.44c-.38-.2-.75-.54-1.15-.58-3.61-.36-4.57-1.36-4.63-4.98,0-.14,0-.27,0-.41,0-21.84,0-43.68,0-65.53,0-.37.05-.74.1-1.39.44.67.72,1.07.98,1.48,15.39,24.02,30.79,46.47,46.14,70.51.8,1.26,1.58,1.48,3.27,1.49v-1.91c0-23.88,0-46.2,0-70.08,0-.86-.02-1.73.06-2.58.18-1.93,1.14-2.95,3.03-3.28.58-.1,1.19-.06,1.74-.24.32-.11.54-.51,1.05-1.03h-13.64c-.38,1.08.3,1.03.97,1.08Z"></path>
+      <path d="M125.51,3.14c2.62.21,3.09,1.21,2.4,4.04-.19.8-.45,1.58-.75,2.35-5.43,14.31-14.66,37.69-20.25,51.79-1.7,4.29-7.77,4.3-9.47,0-4.78-12.01-12.05-30.39-16.41-41.88-1.53-4.02-3.06-8.04-4.39-12.13-.61-1.89-1.11-4,2.55-4.21.02,0,.59-.97.89-1.2,0,0-15.6-.04-15.6,0,0,0,1.04,1.2,1.08,1.2,2.53.01,3.51,1.38,4.36,3.27.45.99.91,1.97,1.3,2.98,9.28,24.05,18.55,46.36,27.81,70.41.29.75.51,1.31,1.56,1.29,1-.02,1.16-.58,1.42-1.27,7.78-20.36,15.56-38.98,23.36-59.34,1.6-4.18,3.2-8.36,4.86-12.52.98-2.46,2.34-4.73,5.36-4.8.05,0,.49-.78.91-1.28h-11.85c.06.02.81,1.27.86,1.28Z"></path>
+      <path d="M505.2,70.6s-.52,2.01-.8,3.01c-.69,2.42-2.31,3.86-4.75,4.31-1.51.29-3.04.54-4.57.57-3.52.07-9.24.12-13.67.14-3.51.02-6.35-2.82-6.35-6.33V8.96c0-.54,0-1.08.03-1.63.15-2.98,1-3.9,3.97-4.3.27-.03.67-.09.8-.07.02,0,.65-1.05.64-1.06h-16.54s.83,1.05.86,1.06c3.26.47,4.61,1.38,4.62,4.98,0,22.3,0,44.59,0,66.88,0,3.71-1.16,4.88-4.84,5.03-.14,0-.28,0-.43,0v1.05h40.1c.75-3.71,1.47-7.36,2.2-11.01-.02,0-1.27.71-1.25.71Z"></path>
+      <path d="M69.14,79.76c-2.1,0-3.5-1.3-4.35-3.18-.42-.92-.83-1.85-1.2-2.79C54.55,50.28,45.51,26.77,36.47,3.25c-.26-.68-.4-1.32-1.46-1.32-1.05,0-1.22.59-1.48,1.29-1.71,4.5-3.43,9-5.14,13.51-.86,2.27-.88,2.25-2.67,7.01-1.29,3.44-1.21,6.37-.9,7.39.74,2.48,2.17,4.74,3.68,6.82,1.7,2.34,3.6,4.53,5.51,6.69,1.51,1.71,3.12,3.37,4.47,5.22.57.78.92,1.38,1.14,2.11.54,1.79.01,3.24-1.91,3.62-3.71.73-6.81-2.96-9.61-4.77-2.82-1.82-7.03-3.25-10.13-1.3-2.91,1.83-3.99,5.24-5.18,8.28-.08.21-.16.41-.24.62h-.04c-1.85,4.85-3.72,9.7-5.59,14.55-.01.03-.02.05-.02.05-.21.56-.43,1.12-.64,1.67-1,2.58-2.43,4.66-5.48,5.14-.02,0-.77,1.36-.78,1.35h12.22s-.69-1.37-.7-1.37c-1.49-.15-3.83-1.12-3.28-3.57.23-1.03.55-2.04.92-3.03,1.73-4.59,3.48-9.17,5.22-13.76.36-.91.71-1.82,1.07-2.74.63-1.58,1.28-3.21,2.48-4.46,2.7-2.84,6.88-1.18,9.64.75,2.98,2.1,6.01,5.16,9.98,4.72,1.51-.17,3.02-.84,3.84-2.18.96-1.58.59-3.63-.15-5.22-.79-1.7-2.2-3.16-3.42-4.55-1.79-2.04-3.62-4.04-5.35-6.14-1.92-2.32-3.81-4.79-5.05-7.55-.49-1.08-.89-3.13-.27-5.94.29-1.31,1.21-3.91,2.26-6.68,1.35-3.57,6.41-3.58,7.77-.01,2.7,7.1,5.38,14.11,8.08,21.2l1.28,3.5c2.59,6.93,5.25,13.83,7.85,20.76,1.37,3.67,2.78,7.33,3.94,11.07.77,2.49.11,3.83-2.51,3.83-.02,0-.77,1.37-.77,1.37.07.04,14.65-.02,14.65,0-.02-.02-.54-1.41-.54-1.41Z"></path>
+      <path d="M561.41,77.45c-2.22,1.16-3.35,1.39-9.55,1.47-.03,0-9.27,0-15.97,0-3.75,0-6.8-3.04-6.8-6.8v-10.56c0-3.55-1.01-11.55,5.05-11.21,1.68.09,3.27,1.23,4.58,2.15,3.06,2.15,6.17,5.3,10.24,4.85,1.55-.17,3.1-.86,3.94-2.24.99-1.62.6-3.72-.15-5.36-.81-1.74-2.26-3.25-3.51-4.68-1.83-2.1-3.72-4.15-5.5-6.3-.32-.38-.63-.78-.94-1.17h.08c-2.64-2.96-5.23-6.02-6.87-8.38-.39-.56-.84-1.28-1.32-2.11-3.67-6.24-5.6-13.37-5.6-20.61v-2.5c7.49.22,15.07-.29,22.56,0,2.58.1,7.51.3,9.75,1.47,2.66,1.4,3.11,4.67,3.7,7.32l1.13.19-2.35-11.22h-46.02v1.23c4.01-.25,5.46.78,5.72,4.78,0,5.37,1.58,10.63,4.52,15.13,1.45,2.21,2.89,4.34,3.73,5.34,2.42,2.91,5.17,5.95,7.83,8.81h0c1.75,2.4,3.69,4.65,5.66,6.87,1.55,1.75,3.2,3.46,4.59,5.36.59.81.94,1.42,1.17,2.16.56,1.84.01,3.33-1.96,3.72-3.81.75-7-3.04-9.87-4.89-2.9-1.87-6.55-3.04-10.4-1.34-1.18.52-2.81,1.97-3.83,4.16-1.08,2.31-1.43,4.06-1.43,8.04v14.41c-.33,3.85-2.02,4.61-5.72,4.39v1.23h46.02l2.35-11.22-1.13.19c-.59,2.65-1.04,5.92-3.7,7.32Z"></path>
+    </svg>
+  </a>
+  <nav class="nav__right">
+    <div class="nav__links">
+      <a class="nav__link" href="#vision">The Vision</a>
+      <a class="nav__link" href="#location">Location</a>
+      <a class="nav__link" href="#history">History</a>
+      <a class="nav__link" href="#planning">Planning</a>
+      <a class="nav__link" href="#project">The Project</a>
+      <a class="nav__link" href="#benefits">Benefits</a>
+    </div>
+    <a class="nav__cta" href="#contact">Get in Touch</a>
+    <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<!-- Mobile menu -->
+<div class="menu" id="menu">
+  <a href="#vision">The Vision</a>
+  <a href="#location">Location</a>
+  <a href="#history">History</a>
+  <a href="#planning">Planning</a>
+  <a href="#project">The Project</a>
+  <a href="#benefits">Benefits</a>
+  <a href="#contact">Get in Touch</a>
+  <div class="menu__foot">Avondale Lodge &amp; Spa — Illawarra, New South Wales</div>
+</div>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" data-screen-label="Hero">
+  <div class="hero__bg" id="heroBg"></div>
+  <div class="hero__scrim"></div>
+  <div class="hero__inner">
+    <img class="hero__mark reveal in" src="assets/img/logo-linen.png" alt="Avondale" />
+    <div class="hero__sub reveal in reveal-d2">Lodge &amp; Spa</div>
+  </div>
+  <div class="hero__rule" aria-hidden="true"></div>
+  <div class="hero__loc">Illawarra, New South Wales</div>
+  <div class="hero__loc right">avondaleresort.com.au</div>
+</section>
+
+<!-- ============================ THE VISION ============================ -->
+<section id="vision" data-screen-label="The Vision">
+  <div class="wrap">
+    <p class="vision__statement reveal">Avondale Lodge &amp; Spa
+will transform a former coal mining site into a
+world-class regenerative tourism destination.</p>
+
+    <div class="vision__feature">
+      <div class="vision__showcase">
+        <figure class="vfig vfig--a reveal reveal-d1">
+          <img src="assets/img/heritage-1.jpg" alt="Aerial view of the site for the future Huntley Workshop and Administration Building" />
+          <figcaption><span class="eyebrow no-rule">Aerial View of site for future Huntley Workshop and Administration Building</span></figcaption>
+        </figure>
+        <figure class="vfig vfig--b reveal reveal-d2">
+          <img src="assets/img/heritage-2.jpg" alt="Historical photograph of former mining operations at the site" />
+          <figcaption><span class="eyebrow no-rule">Huntley Coal Hopper Construction</span></figcaption>
+        </figure>
+        <div class="vision__note reveal reveal-d3">
+          <span class="eyebrow no-rule">The Vision</span>
+          <p class="vision__note-lead">Where nature, wellness, culture and hospitality are immersed within a restored Illawarra landscape.</p>
+          <p class="body">Through adaptive re-use and thoughtful design, the project will celebrate the site’s heritage, demonstrate the power of landscape renewal, and establish a new benchmark for experience-led eco-tourism in Australia.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ LOCATION ============================ -->
+<section id="location" class="location" data-screen-label="Site Location">
+  <div class="location__frame">
+    <img class="location__map reveal" src="assets/img/site-location-map.jpg" alt="Avondale connectivity map — drive times to Western Sydney Airport, Sydney, Kingsford Smith Airport, Wollongong, Shellharbour Airport, Shellharbour, Jamberoo, Kiama, Berry, Nowra, Huskisson, Bowral, Robertson, Kangaroo Valley, Leura and Canberra" />
+    <div class="location__overlay">
+      <span class="eyebrow reveal">Site Location</span>
+      <h2 class="location__title reveal reveal-d1" style="font-size: 56px">Site Location</h2>
+      <p class="body reveal reveal-d2">The former Huntley and Avondale Colliery site located 15&nbsp;mins south west of Wollongong and 1hr&nbsp;25mins from the Sydney CBD.</p>
+      <p class="body reveal reveal-d3">The Avondale Site is 317 hectares in area, approximately 2.8km north/south and 1.4km east/west. The site has a 450m fall from west to east and has views from Port Kembla to Shell Harbour over Lake Illawarra.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ HISTORY ============================ -->
+<section id="history" class="bg-linen-pure" data-screen-label="History">
+  <div class="wrap" style="height: 990px">
+    <div class="editorial">
+      <span class="editorial__kicker eyebrow no-rule reveal" style="height: 11px; text-align: left; line-height: 1.2">1946 — 1989 · Huntley Colliery</span>
+      <h2 class="editorial__title reveal reveal-d1">History</h2>
+      <div class="hist-thumbs reveal reveal-d2">
+        <figure class="hist-thumb"><img src="assets/img/hist-1.jpg" alt="Huntley Colliery access road under construction, with a vehicle and blasting smoke" /></figure>
+        <figure class="hist-thumb"><img src="assets/img/hist-2.jpg" alt="Coal trucks descending the haul road from the Huntley Colliery" /></figure>
+      </div>
+      <div class="editorial__cols">
+        <p class="body reveal reveal-d1">The site has a rich history of agricultural use before becoming home to the NSW Government-owned Huntley Colliery, which operated from 1946 to 1989.
+
+Originally established as a small hand-worked mine, the colliery expanded significantly following the discovery of the Wongawilli seam in 1952, becoming one of Australia’s most productive coal mines and the first in Australia to exceed one million tonnes of annual production by 1966. At its peak, the mine employed almost 500 people and played an important role in the Illawarra’s industrial development.</p>
+        <p class="body reveal reveal-d2">These mining operations significantly altered parts of the landscape, creating access roads, hardstand areas and modified landforms that remain evident today. Following the closure of the mine, the site transitioned primarily to grazing land, with the former mining areas largely underutilised.
+
+The proposed redevelopment provides an opportunity to positively transform these previously disturbed lands through environmental rehabilitation, landscape restoration and adaptive re-use, creating a new destination that acknowledges the site’s agricultural and industrial heritage while delivering lasting environmental, social and economic benefits.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PLANNING PROCESS ============================ -->
+<section id="planning" class="planning" data-screen-label="Planning Process">
+  <div class="planning__head">
+    <span class="eyebrow reveal">The Pathway Ahead</span>
+    <h2 class="planning__title reveal reveal-d1">Planning Process</h2>
+    <p class="planning__hint reveal reveal-d2" aria-hidden="true">Hover or focus a stage to read more</p>
+  </div>
+
+  <div class="pp-viewport reveal reveal-d1">
+    <div class="pp-scroll" tabindex="0" aria-label="Planning process timeline, scrollable">
+      <ol class="pp-track">
+        <li class="pp-item pp-item--up" data-state="done" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Project Architect / Lead Designer Established</span>
+          <div class="pp-card" role="tooltip"><p>Award winning architectural firm Turner Studio will be leading the design process.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="done" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Visioning and Concept Design Work</span>
+          <div class="pp-card" role="tooltip"><p>The development of a vision and design concept of the Avondale Lodge and Spa.</p></div>
+        </li>
+        <li class="pp-item pp-item--up" data-state="done" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Request for SEAR&rsquo;s</span>
+          <div class="pp-card" role="tooltip"><p>Application to the NSW state government requesting the Secretary&rsquo;s Environmental Assessment Requirements (SEARs). The SEARs sets out all the requirements to be met for lodging a State Significant Development application to the NSW Government.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="done" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Concept Refinement</span>
+          <div class="pp-card" role="tooltip"><p>Taking on board community &amp; stakeholder feedback, results of site investigations and feedback/advice from SDRP, the concept designs are further developed and refined.</p></div>
+        </li>
+        <li class="pp-item pp-item--up pp-item--current" data-state="current" tabindex="0" aria-current="step">
+          <span class="pp-dot"><span class="pp-pulse" aria-hidden="true"></span></span>
+          <span class="pp-title">We Are Here</span>
+          <div class="pp-card" role="tooltip"><p>This is the current stage of the planning process.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Design Development</span>
+          <div class="pp-card" role="tooltip"><p>The refined concept is progressed into detailed architectural and landscape design, resolving the proposal ahead of formal application.</p></div>
+        </li>
+        <li class="pp-item pp-item--up" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Lodge SSD Application</span>
+          <div class="pp-card" role="tooltip"><p>Make formal application to the state government lodging all project design documentation, site assessments and technical reports developed as part of the proposal.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Finalise Proposal</span>
+          <div class="pp-card" role="tooltip"><p>Making all final considerations of feedback received from the community &amp; stakeholders, SDRP, local Council, traditional custodians &amp; representatives, &amp; site specific studies and assessments, all required designs and reports shall be finalised and compiled ready for submission to the state government.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Public Exhibition</span>
+          <div class="pp-card" role="tooltip"><p>SSD application is publicly exhibited for a minimum period of 28 days. Surrounding residents are notified by the department in writing. The application is also made available through the NSW government &lsquo;Major Projects&rsquo; web site. You can have your say on the proposed development by making submissions during the public exhibition period.</p></div>
+        </li>
+        <li class="pp-item pp-item--up" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Assessment &amp; Recommendation</span>
+          <div class="pp-card" role="tooltip"><p>The department assesses the application and makes a recommendation set out in an environmental assessment report. The recommendation, including either conditions of consent or reasons for refusal, is referred to the minister or delegate for a final determination.</p></div>
+        </li>
+        <li class="pp-item pp-item--down" data-state="future" tabindex="0">
+          <span class="pp-dot"></span>
+          <span class="pp-title">Final Determination</span>
+          <div class="pp-card" role="tooltip"><p>The minister makes a final determination to approve or refuse the application.</p></div>
+        </li>
+      </ol>
+    </div>
+    <div class="pp-cue" id="ppCue" aria-hidden="true">
+      <span class="pp-cue__track"><span class="pp-cue__dot"></span></span>
+      <span class="pp-cue__label">Drag or scroll to explore the timeline</span>
+      <span class="pp-cue__chev"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h13M13 7l5 5-5 5"></path></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ THE PROJECT ============================ -->
+<section id="project" class="bg-green" data-screen-label="The Project">
+  <div class="wrap">
+    <span class="eyebrow reveal">The Project</span>
+    <div class="project__top" style="margin-top:clamp(34px,4vw,64px)">
+      <div class="project__copy">
+        <p class="body large reveal reveal-d1">The project will deliver authentic and immersive guest experiences with a focus on storytelling, pre and post European history, including former mining operations, and the unique Illawarra Landscape.</p>
+        <p class="body reveal reveal-d2">The project delivers substantial and much-needed environmental protection and restoration works, celebrating the site&rsquo;s natural values through an interconnected network of enhanced visitor experiences, including walking trails, boardwalks, lookouts, viewing decks and gathering spaces that foster meaningful engagement with the regenerated landscape.</p>
+      </div>
+      <figure class="project__plan reveal reveal-d2">
+        <img src="assets/img/site-masterplan.jpeg" alt="Avondale site masterplan — aerial overlay showing the development footprint across the former colliery site" />
+        <figcaption><span class="eyebrow no-rule">Site Masterplan</span></figcaption>
+      </figure>
+    </div>
+
+    <p class="body proj-comprising reveal" style="max-width:46ch;color:rgba(236,233,229,0.86);margin-bottom:8px">An experienced focused eco-tourist lodge and spa comprising;</p>
+    <div class="index-list reveal reveal-d1">
+      <div class="index-row"><span class="index-row__num">01</span><span class="index-row__name">Arrival Pavilion</span></div>
+      <div class="index-row"><span class="index-row__num">02</span><span class="index-row__name">Main Lodge Building</span></div>
+      <div class="index-row"><span class="index-row__num">03</span><span class="index-row__name">Guest Accommodation</span></div>
+      <div class="index-row"><span class="index-row__num">04</span><span class="index-row__name">Wellness Spa</span></div>
+      <div class="index-row"><span class="index-row__num">05</span><span class="index-row__name">Adaptive Re-use of the former Coal</span></div>
+      <div class="index-row"><span class="index-row__num">06</span><span class="index-row__name">Conveyor Pavilion</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ GALLERY ============================ -->
+<section id="gallery" data-screen-label="Gallery">
+  <div class="wrap" style="padding-top:clamp(80px,11vw,180px);padding-bottom:clamp(80px,11vw,180px)">
+    <div class="gallery">
+      <figure class="g-a reveal"><img src="assets/img/bg-1.jpg" alt="Illawarra escarpment cliff" /></figure>
+      <figure class="g-b reveal reveal-d1"><img src="assets/img/brand-13s.jpg" alt="Avondale welcome folder" /></figure>
+      <figure class="g-c reveal reveal-d2"><img src="assets/img/escarpment-drone.jpg" alt="Aerial view over the Illawarra escarpment and forested valley" /></figure>
+      <figure class="g-d reveal"><img src="assets/img/bg-3.jpg" alt="Forest canopy" /></figure>
+      <figure class="g-e reveal reveal-d1"><img src="assets/img/brand-envelope.jpg" alt="Avondale branded envelope and stationery" /></figure>
+      <figure class="g-f reveal reveal-d2"><img src="assets/img/bg-2.jpg" alt="View over Lake Illawarra" /></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ BENEFITS ============================ -->
+<section id="benefits" class="bg-eucalyptus" data-screen-label="Benefits">
+  <div class="wrap">
+    <div class="benefits__head">
+      <span class="eyebrow center reveal">A lasting contribution</span>
+      <h2 class="benefits__title reveal reveal-d1" style="margin-top:18px">Benefits</h2>
+    </div>
+    <div class="benefits__list">
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Rehabilitation and beneficial re-use of a former mining site and industrial heritage assets.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Significant environmental restoration and protection outcomes on previously disturbed land, with no native forest clearing.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Creation of a unique, internationally recognised eco-tourism and wellness destination for the Illawarra.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Increased tourism, economic activity and investment aligned with NSW visitor economy objectives.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Employment, training and local business opportunities that support regional prosperity.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Delivery of much-needed high-end immersive eco-tourism accommodation in regional NSW.</p></div>
+      <div class="benefit reveal"><span class="benefit__num"></span><p class="benefit__text">Enhanced appreciation and activation of the Illawarra escarpment landscape and surrounding visitor experiences.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DESIGN TEAM ============================ -->
+<section id="team" class="bg-linen-pure team" data-screen-label="Design Team">
+  <div class="wrap team__wrap">
+    <span class="eyebrow center reveal">Design Team</span>
+    <p class="team__lead reveal reveal-d1">The design team is led by Nick Turner, whose 25+ years of experience is underpinned by a passion for rehabilitating and reimagining sites through adaptive reuse.</p>
+    <p class="body team__body reveal reveal-d2">His approach balances the preservation of a place&rsquo;s history with contemporary design, creating hospitality destinations that strengthen community connections while celebrating local character. By finding the right balance between heritage and innovation, Nick delivers memorable hotel experiences that inspire people to visit, gather, and return.</p>
+  </div>
+</section>
+
+<!-- ============================ CONTACT ============================ -->
+<section id="contact" data-screen-label="Get in Touch">
+  <div class="wrap">
+    <div class="contact__grid">
+      <div>
+        <span class="eyebrow reveal">Connect With Us</span>
+        <h2 class="contact__title reveal reveal-d1" style="margin-top:22px">Get in<br />Touch</h2>
+        <p class="body reveal reveal-d2">For further information or to discuss the project, please get in touch with the project team. We welcome your feedback and interest and will continue to keep the community informed as the project progresses.</p>
+        <div class="contact__aside reveal reveal-d3">
+          <a href="#top">www.avondaleresort.com.au</a>
+          <span>Illawarra, New South Wales</span>
+          <span>Media Enquiries: <a href="mailto:contact@avondale.com.au">contact@avondale.com.au</a></span>
+        </div>
+      </div>
+
+      <form class="form reveal reveal-d2" id="contactForm" novalidate>
+        <div class="form__fields">
+          <div class="field">
+            <label>Name <span class="req">(required)</span></label>
+            <div class="field__row">
+              <div class="field" data-field>
+                <input type="text" name="first" placeholder="First Name" required />
+                <span class="field__err">Please add your first name</span>
+              </div>
+              <div class="field" data-field>
+                <input type="text" name="last" placeholder="Last Name" required />
+                <span class="field__err">Please add your last name</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="field" data-field>
+            <label>Email <span class="req">(required)</span></label>
+            <input type="email" name="email" placeholder="you@email.com" required />
+            <span class="field__err">Please add a valid email</span>
+          </div>
+
+          <div class="field" data-field>
+            <label>Phone</label>
+            <input type="tel" name="phone" placeholder="Optional" />
+            <span class="field__err"></span>
+          </div>
+
+          <div class="field">
+            <label>What services are you interested in?</label>
+            <div class="choices">
+              <label class="choice"><input type="checkbox" name="interest" value="Community Enquiries" /><span class="box"></span>Community Enquiries</label>
+              <label class="choice"><input type="checkbox" name="interest" value="Media Enquiries" /><span class="box"></span>Media Enquiries</label>
+            </div>
+          </div>
+
+          <div class="field" data-field>
+            <label>Project Details <span class="req">(required)</span></label>
+            <textarea name="details" rows="4" placeholder="Tell us a little about your enquiry" required></textarea>
+            <span class="field__err">Please add a few details</span>
+          </div>
+
+          <button type="submit" class="submit">Submit</button>
+        </div>
+        <p class="form__thanks">Thank you — your enquiry has been received. The Avondale project team will be in touch.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="footer__top">
+    <img class="footer__mark" src="assets/img/logo-linen.png" alt="Avondale Lodge &amp; Spa" />
+    <div class="footer__nav">
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#vision">The Vision</a>
+        <a href="#location">Location</a>
+        <a href="#history">History</a>
+        <a href="#planning">Planning</a>
+        <a href="#project">The Project</a>
+        <a href="#benefits">Benefits</a>
+      </div>
+      <div class="footer__col">
+        <h4>Connect</h4>
+        <a href="#contact">Get in Touch</a>
+        <a href="#top">www.avondaleresort.com.au</a>
+        <span>Illawarra, New South Wales</span>
+        <a href="mailto:contact@avondale.com.au">contact@avondale.com.au</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <span>Avondale Lodge &amp; Spa</span>
+    <span>Illawarra · New South Wales</span>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<style id="__om-edit-overrides">
+</style>
